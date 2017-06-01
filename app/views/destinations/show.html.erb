@@ -19,7 +19,16 @@
 
   <div class="row">
     <h4>Forecast for <%= @destination.name %>:</h4>
-    
+    <% if @destination.ten_day_forecast(@destination.zip).empty? %>
+    <p>Invalid zipcode, could not find weather information</p>
+    <% else %>
+    <ul>
+      <% @destination.ten_day_forecast(@destination.zip).each do |forecast| %>
+      <li> <%= forecast.date %> High: <%= forecast.high %> / Low: <%= forecast.low %> <%= forecast.conditions %></li>
+      <% end %>
+    </ul>
+    <% end %>
+
   </div>
 
   <div class="row">

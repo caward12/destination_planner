@@ -1,0 +1,992 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.wunderground.com/api/<WEATHER_KEY>/forecast10day/q/63109.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.12.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      Last-Modified:
+      - Sat, 27 May 2017 21:54:40 GMT
+      Server:
+      - Apache/2.2.15 (CentOS)
+      X-Creationtime:
+      - '0.027'
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Sat, 27 May 2017 21:54:40 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Sat, 27 May 2017 21:54:40 GMT
+      Content-Length:
+      - '19081'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - DT=1495922080:130553:ip-10-226-237-178; path=/; expires=Fri, 01-Jan-2020 00:00:00
+        GMT; domain=.wunderground.com
+      - Prefs=FAVS:1|WXSN:1|PWSOBS:1|WPHO:1|PHOT:1|RADC:0|RADALL:0|HIST0:NULL|GIFT:1|PHOTOTHUMBS:50|EXPFCT:1|;
+        path=/; expires=Fri, 01-Jan-2020 00:00:00 GMT; domain=.wunderground.com
+    body:
+      encoding: UTF-8
+      string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
+        \ \"features\": {\n  \"forecast10day\": 1\n  }\n\t}\n\t\t,\n\t\"forecast\":{\n\t\t\"txt_forecast\":
+        {\n\t\t\"date\":\"3:35 PM CDT\",\n\t\t\"forecastday\": [\n\t\t{\n\t\t\"period\":0,\n\t\t\"icon\":\"tstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/tstorms.gif\",\n\t\t\"title\":\"Saturday\",\n\t\t\"fcttext\":\"Strong
+        to severe thunderstorms likely. Lows overnight in the low 60s.\",\n\t\t\"fcttext_metric\":\"Scattered
+        strong thunderstorms. Low 17C.\",\n\t\t\"pop\":\"90\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":1,\n\t\t\"icon\":\"nt_tstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_tstorms.gif\",\n\t\t\"title\":\"Saturday
+        Night\",\n\t\t\"fcttext\":\"Thunderstorms likely, some strong, especially
+        during the evening. Damaging winds and large hail with some storms. Low 63F.
+        SE winds shifting to WNW at 10 to 15 mph. Chance of rain 90%.\",\n\t\t\"fcttext_metric\":\"Variable
+        clouds with strong thunderstorms, especially early. Damaging winds and large
+        hail with some storms. Low 17C. SE winds shifting to WNW at 15 to 25 km/h.
+        Chance of rain 60%.\",\n\t\t\"pop\":\"90\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":2,\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"title\":\"Sunday\",\n\t\t\"fcttext\":\"Mixed
+        clouds and sun with scattered thunderstorms. High 79F. Winds WNW at 10 to
+        15 mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Scattered showers
+        and thunderstorms. High 26C. Winds WNW at 15 to 25 km/h. Chance of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":3,\n\t\t\"icon\":\"nt_clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_clear.gif\",\n\t\t\"title\":\"Sunday
+        Night\",\n\t\t\"fcttext\":\"Clear skies. Low 58F. Winds WNW at 5 to 10 mph.\",\n\t\t\"fcttext_metric\":\"A
+        mostly clear sky. Low around 15C. Winds WNW at 10 to 15 km/h.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":4,\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"title\":\"Monday\",\n\t\t\"fcttext\":\"Sunshine
+        and clouds mixed. A stray shower or thunderstorm is possible. High 84F. Winds
+        W at 10 to 15 mph.\",\n\t\t\"fcttext_metric\":\"Partly cloudy skies. A stray
+        shower or thunderstorm is possible. High 29C. Winds W at 15 to 25 km/h.\",\n\t\t\"pop\":\"20\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":5,\n\t\t\"icon\":\"nt_clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_clear.gif\",\n\t\t\"title\":\"Monday
+        Night\",\n\t\t\"fcttext\":\"A mostly clear sky. Low 57F. Winds WNW at 5 to
+        10 mph.\",\n\t\t\"fcttext_metric\":\"Clear. Low 14C. Winds WNW at 10 to 15
+        km/h.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":6,\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"title\":\"Tuesday\",\n\t\t\"fcttext\":\"Partly
+        cloudy with afternoon showers or thunderstorms. High 79F. Winds W at 10 to
+        15 mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Partly cloudy with
+        afternoon showers or thunderstorms. High 26C. Winds W at 15 to 25 km/h. Chance
+        of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":7,\n\t\t\"icon\":\"nt_partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif\",\n\t\t\"title\":\"Tuesday
+        Night\",\n\t\t\"fcttext\":\"A few clouds. Low 56F. Winds light and variable.\",\n\t\t\"fcttext_metric\":\"Partly
+        cloudy. Low 14C. Winds light and variable.\",\n\t\t\"pop\":\"20\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":8,\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"title\":\"Wednesday\",\n\t\t\"fcttext\":\"Sunny
+        skies. High around 80F. Winds WNW at 5 to 10 mph.\",\n\t\t\"fcttext_metric\":\"A
+        mainly sunny sky. High 26C. Winds WNW at 10 to 15 km/h.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":9,\n\t\t\"icon\":\"nt_clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_clear.gif\",\n\t\t\"title\":\"Wednesday
+        Night\",\n\t\t\"fcttext\":\"A mostly clear sky. Low 57F. Winds light and variable.\",\n\t\t\"fcttext_metric\":\"Mostly
+        clear. Low 14C. Winds light and variable.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":10,\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"title\":\"Thursday\",\n\t\t\"fcttext\":\"Scattered
+        thunderstorms in the morning. Cloudy skies late. High 84F. Winds S at 5 to
+        10 mph. Chance of rain 40%.\",\n\t\t\"fcttext_metric\":\"Scattered thunderstorms
+        in the morning, then cloudy skies late. High 29C. Winds S at 10 to 15 km/h.
+        Chance of rain 40%.\",\n\t\t\"pop\":\"40\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":11,\n\t\t\"icon\":\"nt_chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_chancerain.gif\",\n\t\t\"title\":\"Thursday
+        Night\",\n\t\t\"fcttext\":\"Partly cloudy during the evening. A few showers
+        developing later during the night. Low 64F. Winds light and variable. Chance
+        of rain 30%.\",\n\t\t\"fcttext_metric\":\"Partly cloudy skies early followed
+        by mostly cloudy skies and a few showers later at night. Low 18C. Winds light
+        and variable. Chance of rain 30%.\",\n\t\t\"pop\":\"30\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":12,\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"title\":\"Friday\",\n\t\t\"fcttext\":\"Partly
+        cloudy skies in the morning will give way to cloudy skies during the afternoon.
+        A stray shower or thunderstorm is possible. High 81F. Winds SSE at 5 to 10
+        mph.\",\n\t\t\"fcttext_metric\":\"Intervals of clouds and sunshine in the
+        morning with more clouds for later in the day. A stray shower or thunderstorm
+        is possible. High 28C. Winds SSE at 10 to 15 km/h.\",\n\t\t\"pop\":\"20\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":13,\n\t\t\"icon\":\"nt_chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_chancetstorms.gif\",\n\t\t\"title\":\"Friday
+        Night\",\n\t\t\"fcttext\":\"Scattered thunderstorms in the evening, then variable
+        clouds overnight with more showers at times. Low 64F. Winds SSE at 5 to 10
+        mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Scattered thunderstorms
+        during the evening followed by occasional showers overnight. Low 18C. Winds
+        SSE at 10 to 15 km/h. Chance of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":14,\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"title\":\"Saturday\",\n\t\t\"fcttext\":\"Mixed
+        clouds and sun with scattered thunderstorms. High 83F. Winds SE at 5 to 10
+        mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Scattered thunderstorms.
+        High 29C. Winds SE at 10 to 15 km/h. Chance of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":15,\n\t\t\"icon\":\"nt_chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_chancerain.gif\",\n\t\t\"title\":\"Saturday
+        Night\",\n\t\t\"fcttext\":\"Variable clouds with showers at times, and perhaps
+        a rumble or two of thunder, especially early. Low 66F. Winds SE at 5 to 10
+        mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Chance of an isolated
+        thunderstorm in the evening, then variable clouds overnight with more showers
+        at times. Low 19C. Winds SE at 10 to 15 km/h. Chance of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":16,\n\t\t\"icon\":\"chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancerain.gif\",\n\t\t\"title\":\"Sunday\",\n\t\t\"fcttext\":\"Rain
+        showers early with mostly cloudy conditions later in the day. High 82F. Winds
+        SW at 5 to 10 mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Rain showers
+        early with mostly cloudy conditions later in the day. High 28C. Winds SW at
+        10 to 15 km/h. Chance of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":17,\n\t\t\"icon\":\"nt_chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_chancerain.gif\",\n\t\t\"title\":\"Sunday
+        Night\",\n\t\t\"fcttext\":\"Overcast with rain showers at times. Low 63F.
+        Winds S at 5 to 10 mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Overcast
+        with rain showers at times. Low 17C. Winds S at 10 to 15 km/h. Chance of rain
+        50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":18,\n\t\t\"icon\":\"chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancerain.gif\",\n\t\t\"title\":\"Monday\",\n\t\t\"fcttext\":\"Overcast
+        with rain showers at times. High near 80F. Winds SW at 5 to 10 mph. Chance
+        of rain 50%.\",\n\t\t\"fcttext_metric\":\"Cloudy with occasional rain showers.
+        High 27C. Winds SW at 10 to 15 km/h. Chance of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":19,\n\t\t\"icon\":\"nt_partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif\",\n\t\t\"title\":\"Monday
+        Night\",\n\t\t\"fcttext\":\"Partly cloudy skies. Low 63F. Winds light and
+        variable.\",\n\t\t\"fcttext_metric\":\"Partly cloudy skies. Low 17C. Winds
+        light and variable.\",\n\t\t\"pop\":\"20\"\n\t\t}\n\t\t]\n\t\t},\n\t\t\"simpleforecast\":
+        {\n\t\t\"forecastday\": [\n\t\t{\"date\":{\n\t\"epoch\":\"1495929600\",\n\t\"pretty\":\"7:00
+        PM CDT on May 27, 2017\",\n\t\"day\":27,\n\t\"month\":5,\n\t\"year\":2017,\n\t\"yday\":146,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"May\",\n\t\"monthname_short\":\"May\",\n\t\"weekday_short\":\"Sat\",\n\t\"weekday\":\"Saturday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":1,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"88\",\n\t\t\"celsius\":\"31\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"63\",\n\t\t\"celsius\":\"17\"\n\t\t},\n\t\t\"conditions\":\"Thunderstorm\",\n\t\t\"icon\":\"tstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/tstorms.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":90,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.61,\n\t\t\"mm\": 15\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        null,\n\t\t\"mm\": null\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.60,\n\t\t\"mm\":
+        15\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": null,\n\t\t\"cm\": null\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 5,\n\t\t\"kph\":
+        8,\n\t\t\"dir\": \"\",\n\t\t\"degrees\": 0\n\t\t},\n\t\t\"avewind\": {\n\t\t\"mph\":
+        0,\n\t\t\"kph\": 0,\n\t\t\"dir\": \"ENE\",\n\t\t\"degrees\": 78\n\t\t},\n\t\t\"avehumidity\":
+        80,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\": 0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496016000\",\n\t\"pretty\":\"7:00
+        PM CDT on May 28, 2017\",\n\t\"day\":28,\n\t\"month\":5,\n\t\"year\":2017,\n\t\"yday\":147,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"May\",\n\t\"monthname_short\":\"May\",\n\t\"weekday_short\":\"Sun\",\n\t\"weekday\":\"Sunday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":2,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"79\",\n\t\t\"celsius\":\"26\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"58\",\n\t\t\"celsius\":\"14\"\n\t\t},\n\t\t\"conditions\":\"Chance
+        of a Thunderstorm\",\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":50,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.05,\n\t\t\"mm\": 1\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.05,\n\t\t\"mm\": 1\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 15,\n\t\t\"kph\":
+        24,\n\t\t\"dir\": \"WNW\",\n\t\t\"degrees\": 284\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 12,\n\t\t\"kph\": 19,\n\t\t\"dir\": \"WNW\",\n\t\t\"degrees\":
+        284\n\t\t},\n\t\t\"avehumidity\": 66,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496102400\",\n\t\"pretty\":\"7:00
+        PM CDT on May 29, 2017\",\n\t\"day\":29,\n\t\"month\":5,\n\t\"year\":2017,\n\t\"yday\":148,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"May\",\n\t\"monthname_short\":\"May\",\n\t\"weekday_short\":\"Mon\",\n\t\"weekday\":\"Monday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":3,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"84\",\n\t\t\"celsius\":\"29\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"57\",\n\t\t\"celsius\":\"14\"\n\t\t},\n\t\t\"conditions\":\"Partly
+        Cloudy\",\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":20,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 15,\n\t\t\"kph\":
+        24,\n\t\t\"dir\": \"W\",\n\t\t\"degrees\": 259\n\t\t},\n\t\t\"avewind\": {\n\t\t\"mph\":
+        10,\n\t\t\"kph\": 16,\n\t\t\"dir\": \"W\",\n\t\t\"degrees\": 259\n\t\t},\n\t\t\"avehumidity\":
+        44,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\": 0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496188800\",\n\t\"pretty\":\"7:00
+        PM CDT on May 30, 2017\",\n\t\"day\":30,\n\t\"month\":5,\n\t\"year\":2017,\n\t\"yday\":149,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"May\",\n\t\"monthname_short\":\"May\",\n\t\"weekday_short\":\"Tue\",\n\t\"weekday\":\"Tuesday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":4,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"79\",\n\t\t\"celsius\":\"26\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"56\",\n\t\t\"celsius\":\"13\"\n\t\t},\n\t\t\"conditions\":\"Chance
+        of a Thunderstorm\",\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":50,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.06,\n\t\t\"mm\": 2\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.06,\n\t\t\"mm\": 2\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 15,\n\t\t\"kph\":
+        24,\n\t\t\"dir\": \"W\",\n\t\t\"degrees\": 277\n\t\t},\n\t\t\"avewind\": {\n\t\t\"mph\":
+        11,\n\t\t\"kph\": 18,\n\t\t\"dir\": \"W\",\n\t\t\"degrees\": 277\n\t\t},\n\t\t\"avehumidity\":
+        43,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\": 0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496275200\",\n\t\"pretty\":\"7:00
+        PM CDT on May 31, 2017\",\n\t\"day\":31,\n\t\"month\":5,\n\t\"year\":2017,\n\t\"yday\":150,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"May\",\n\t\"monthname_short\":\"May\",\n\t\"weekday_short\":\"Wed\",\n\t\"weekday\":\"Wednesday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":5,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"80\",\n\t\t\"celsius\":\"27\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"57\",\n\t\t\"celsius\":\"14\"\n\t\t},\n\t\t\"conditions\":\"Clear\",\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":10,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"WNW\",\n\t\t\"degrees\": 300\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 7,\n\t\t\"kph\": 11,\n\t\t\"dir\": \"WNW\",\n\t\t\"degrees\":
+        300\n\t\t},\n\t\t\"avehumidity\": 51,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496361600\",\n\t\"pretty\":\"7:00
+        PM CDT on June 01, 2017\",\n\t\"day\":1,\n\t\"month\":6,\n\t\"year\":2017,\n\t\"yday\":151,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Thu\",\n\t\"weekday\":\"Thursday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":6,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"84\",\n\t\t\"celsius\":\"29\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"64\",\n\t\t\"celsius\":\"18\"\n\t\t},\n\t\t\"conditions\":\"Chance
+        of a Thunderstorm\",\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":40,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.04,\n\t\t\"mm\": 1\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.02,\n\t\t\"mm\": 1\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.01,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"S\",\n\t\t\"degrees\": 173\n\t\t},\n\t\t\"avewind\": {\n\t\t\"mph\":
+        6,\n\t\t\"kph\": 10,\n\t\t\"dir\": \"S\",\n\t\t\"degrees\": 173\n\t\t},\n\t\t\"avehumidity\":
+        55,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\": 0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496448000\",\n\t\"pretty\":\"7:00
+        PM CDT on June 02, 2017\",\n\t\"day\":2,\n\t\"month\":6,\n\t\"year\":2017,\n\t\"yday\":152,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Fri\",\n\t\"weekday\":\"Friday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":7,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"81\",\n\t\t\"celsius\":\"27\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"64\",\n\t\t\"celsius\":\"18\"\n\t\t},\n\t\t\"conditions\":\"Partly
+        Cloudy\",\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":20,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.16,\n\t\t\"mm\": 4\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.15,\n\t\t\"mm\":
+        4\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"SSE\",\n\t\t\"degrees\": 163\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 6,\n\t\t\"kph\": 10,\n\t\t\"dir\": \"SSE\",\n\t\t\"degrees\":
+        163\n\t\t},\n\t\t\"avehumidity\": 65,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496534400\",\n\t\"pretty\":\"7:00
+        PM CDT on June 03, 2017\",\n\t\"day\":3,\n\t\"month\":6,\n\t\"year\":2017,\n\t\"yday\":153,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Sat\",\n\t\"weekday\":\"Saturday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":8,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"83\",\n\t\t\"celsius\":\"28\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"66\",\n\t\t\"celsius\":\"19\"\n\t\t},\n\t\t\"conditions\":\"Chance
+        of a Thunderstorm\",\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":50,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.31,\n\t\t\"mm\": 8\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.23,\n\t\t\"mm\": 6\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.07,\n\t\t\"mm\":
+        2\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"SE\",\n\t\t\"degrees\": 146\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 8,\n\t\t\"kph\": 13,\n\t\t\"dir\": \"SE\",\n\t\t\"degrees\":
+        146\n\t\t},\n\t\t\"avehumidity\": 65,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496620800\",\n\t\"pretty\":\"7:00
+        PM CDT on June 04, 2017\",\n\t\"day\":4,\n\t\"month\":6,\n\t\"year\":2017,\n\t\"yday\":154,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Sun\",\n\t\"weekday\":\"Sunday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":9,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"82\",\n\t\t\"celsius\":\"28\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"63\",\n\t\t\"celsius\":\"17\"\n\t\t},\n\t\t\"conditions\":\"Chance
+        of Rain\",\n\t\t\"icon\":\"chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancerain.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":50,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.33,\n\t\t\"mm\": 8\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.05,\n\t\t\"mm\": 1\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.28,\n\t\t\"mm\":
+        7\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"SW\",\n\t\t\"degrees\": 226\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 9,\n\t\t\"kph\": 14,\n\t\t\"dir\": \"SW\",\n\t\t\"degrees\":
+        226\n\t\t},\n\t\t\"avehumidity\": 64,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496707200\",\n\t\"pretty\":\"7:00
+        PM CDT on June 05, 2017\",\n\t\"day\":5,\n\t\"month\":6,\n\t\"year\":2017,\n\t\"yday\":155,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Mon\",\n\t\"weekday\":\"Monday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":10,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"80\",\n\t\t\"celsius\":\"27\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"63\",\n\t\t\"celsius\":\"17\"\n\t\t},\n\t\t\"conditions\":\"Chance
+        of Rain\",\n\t\t\"icon\":\"chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancerain.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":50,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.09,\n\t\t\"mm\": 2\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.09,\n\t\t\"mm\": 2\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"SW\",\n\t\t\"degrees\": 220\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 6,\n\t\t\"kph\": 10,\n\t\t\"dir\": \"SW\",\n\t\t\"degrees\":
+        220\n\t\t},\n\t\t\"avehumidity\": 70,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t]\n\t\t}\n\t}\n}\n"
+    http_version: 
+  recorded_at: Sat, 27 May 2017 21:54:40 GMT
+- request:
+    method: get
+    uri: http://api.wunderground.com/api/<WEATHER_KEY>/forecast10day/q/63109.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.12.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      Last-Modified:
+      - Sat, 27 May 2017 21:54:40 GMT
+      Server:
+      - Apache/2.2.15 (CentOS)
+      X-Creationtime:
+      - '0.027'
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Sat, 27 May 2017 21:54:40 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Sat, 27 May 2017 21:54:40 GMT
+      Content-Length:
+      - '19081'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
+        \ \"features\": {\n  \"forecast10day\": 1\n  }\n\t}\n\t\t,\n\t\"forecast\":{\n\t\t\"txt_forecast\":
+        {\n\t\t\"date\":\"3:35 PM CDT\",\n\t\t\"forecastday\": [\n\t\t{\n\t\t\"period\":0,\n\t\t\"icon\":\"tstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/tstorms.gif\",\n\t\t\"title\":\"Saturday\",\n\t\t\"fcttext\":\"Strong
+        to severe thunderstorms likely. Lows overnight in the low 60s.\",\n\t\t\"fcttext_metric\":\"Scattered
+        strong thunderstorms. Low 17C.\",\n\t\t\"pop\":\"90\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":1,\n\t\t\"icon\":\"nt_tstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_tstorms.gif\",\n\t\t\"title\":\"Saturday
+        Night\",\n\t\t\"fcttext\":\"Thunderstorms likely, some strong, especially
+        during the evening. Damaging winds and large hail with some storms. Low 63F.
+        SE winds shifting to WNW at 10 to 15 mph. Chance of rain 90%.\",\n\t\t\"fcttext_metric\":\"Variable
+        clouds with strong thunderstorms, especially early. Damaging winds and large
+        hail with some storms. Low 17C. SE winds shifting to WNW at 15 to 25 km/h.
+        Chance of rain 60%.\",\n\t\t\"pop\":\"90\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":2,\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"title\":\"Sunday\",\n\t\t\"fcttext\":\"Mixed
+        clouds and sun with scattered thunderstorms. High 79F. Winds WNW at 10 to
+        15 mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Scattered showers
+        and thunderstorms. High 26C. Winds WNW at 15 to 25 km/h. Chance of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":3,\n\t\t\"icon\":\"nt_clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_clear.gif\",\n\t\t\"title\":\"Sunday
+        Night\",\n\t\t\"fcttext\":\"Clear skies. Low 58F. Winds WNW at 5 to 10 mph.\",\n\t\t\"fcttext_metric\":\"A
+        mostly clear sky. Low around 15C. Winds WNW at 10 to 15 km/h.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":4,\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"title\":\"Monday\",\n\t\t\"fcttext\":\"Sunshine
+        and clouds mixed. A stray shower or thunderstorm is possible. High 84F. Winds
+        W at 10 to 15 mph.\",\n\t\t\"fcttext_metric\":\"Partly cloudy skies. A stray
+        shower or thunderstorm is possible. High 29C. Winds W at 15 to 25 km/h.\",\n\t\t\"pop\":\"20\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":5,\n\t\t\"icon\":\"nt_clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_clear.gif\",\n\t\t\"title\":\"Monday
+        Night\",\n\t\t\"fcttext\":\"A mostly clear sky. Low 57F. Winds WNW at 5 to
+        10 mph.\",\n\t\t\"fcttext_metric\":\"Clear. Low 14C. Winds WNW at 10 to 15
+        km/h.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":6,\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"title\":\"Tuesday\",\n\t\t\"fcttext\":\"Partly
+        cloudy with afternoon showers or thunderstorms. High 79F. Winds W at 10 to
+        15 mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Partly cloudy with
+        afternoon showers or thunderstorms. High 26C. Winds W at 15 to 25 km/h. Chance
+        of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":7,\n\t\t\"icon\":\"nt_partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif\",\n\t\t\"title\":\"Tuesday
+        Night\",\n\t\t\"fcttext\":\"A few clouds. Low 56F. Winds light and variable.\",\n\t\t\"fcttext_metric\":\"Partly
+        cloudy. Low 14C. Winds light and variable.\",\n\t\t\"pop\":\"20\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":8,\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"title\":\"Wednesday\",\n\t\t\"fcttext\":\"Sunny
+        skies. High around 80F. Winds WNW at 5 to 10 mph.\",\n\t\t\"fcttext_metric\":\"A
+        mainly sunny sky. High 26C. Winds WNW at 10 to 15 km/h.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":9,\n\t\t\"icon\":\"nt_clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_clear.gif\",\n\t\t\"title\":\"Wednesday
+        Night\",\n\t\t\"fcttext\":\"A mostly clear sky. Low 57F. Winds light and variable.\",\n\t\t\"fcttext_metric\":\"Mostly
+        clear. Low 14C. Winds light and variable.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":10,\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"title\":\"Thursday\",\n\t\t\"fcttext\":\"Scattered
+        thunderstorms in the morning. Cloudy skies late. High 84F. Winds S at 5 to
+        10 mph. Chance of rain 40%.\",\n\t\t\"fcttext_metric\":\"Scattered thunderstorms
+        in the morning, then cloudy skies late. High 29C. Winds S at 10 to 15 km/h.
+        Chance of rain 40%.\",\n\t\t\"pop\":\"40\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":11,\n\t\t\"icon\":\"nt_chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_chancerain.gif\",\n\t\t\"title\":\"Thursday
+        Night\",\n\t\t\"fcttext\":\"Partly cloudy during the evening. A few showers
+        developing later during the night. Low 64F. Winds light and variable. Chance
+        of rain 30%.\",\n\t\t\"fcttext_metric\":\"Partly cloudy skies early followed
+        by mostly cloudy skies and a few showers later at night. Low 18C. Winds light
+        and variable. Chance of rain 30%.\",\n\t\t\"pop\":\"30\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":12,\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"title\":\"Friday\",\n\t\t\"fcttext\":\"Partly
+        cloudy skies in the morning will give way to cloudy skies during the afternoon.
+        A stray shower or thunderstorm is possible. High 81F. Winds SSE at 5 to 10
+        mph.\",\n\t\t\"fcttext_metric\":\"Intervals of clouds and sunshine in the
+        morning with more clouds for later in the day. A stray shower or thunderstorm
+        is possible. High 28C. Winds SSE at 10 to 15 km/h.\",\n\t\t\"pop\":\"20\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":13,\n\t\t\"icon\":\"nt_chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_chancetstorms.gif\",\n\t\t\"title\":\"Friday
+        Night\",\n\t\t\"fcttext\":\"Scattered thunderstorms in the evening, then variable
+        clouds overnight with more showers at times. Low 64F. Winds SSE at 5 to 10
+        mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Scattered thunderstorms
+        during the evening followed by occasional showers overnight. Low 18C. Winds
+        SSE at 10 to 15 km/h. Chance of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":14,\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"title\":\"Saturday\",\n\t\t\"fcttext\":\"Mixed
+        clouds and sun with scattered thunderstorms. High 83F. Winds SE at 5 to 10
+        mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Scattered thunderstorms.
+        High 29C. Winds SE at 10 to 15 km/h. Chance of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":15,\n\t\t\"icon\":\"nt_chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_chancerain.gif\",\n\t\t\"title\":\"Saturday
+        Night\",\n\t\t\"fcttext\":\"Variable clouds with showers at times, and perhaps
+        a rumble or two of thunder, especially early. Low 66F. Winds SE at 5 to 10
+        mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Chance of an isolated
+        thunderstorm in the evening, then variable clouds overnight with more showers
+        at times. Low 19C. Winds SE at 10 to 15 km/h. Chance of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":16,\n\t\t\"icon\":\"chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancerain.gif\",\n\t\t\"title\":\"Sunday\",\n\t\t\"fcttext\":\"Rain
+        showers early with mostly cloudy conditions later in the day. High 82F. Winds
+        SW at 5 to 10 mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Rain showers
+        early with mostly cloudy conditions later in the day. High 28C. Winds SW at
+        10 to 15 km/h. Chance of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":17,\n\t\t\"icon\":\"nt_chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_chancerain.gif\",\n\t\t\"title\":\"Sunday
+        Night\",\n\t\t\"fcttext\":\"Overcast with rain showers at times. Low 63F.
+        Winds S at 5 to 10 mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Overcast
+        with rain showers at times. Low 17C. Winds S at 10 to 15 km/h. Chance of rain
+        50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":18,\n\t\t\"icon\":\"chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancerain.gif\",\n\t\t\"title\":\"Monday\",\n\t\t\"fcttext\":\"Overcast
+        with rain showers at times. High near 80F. Winds SW at 5 to 10 mph. Chance
+        of rain 50%.\",\n\t\t\"fcttext_metric\":\"Cloudy with occasional rain showers.
+        High 27C. Winds SW at 10 to 15 km/h. Chance of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":19,\n\t\t\"icon\":\"nt_partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif\",\n\t\t\"title\":\"Monday
+        Night\",\n\t\t\"fcttext\":\"Partly cloudy skies. Low 63F. Winds light and
+        variable.\",\n\t\t\"fcttext_metric\":\"Partly cloudy skies. Low 17C. Winds
+        light and variable.\",\n\t\t\"pop\":\"20\"\n\t\t}\n\t\t]\n\t\t},\n\t\t\"simpleforecast\":
+        {\n\t\t\"forecastday\": [\n\t\t{\"date\":{\n\t\"epoch\":\"1495929600\",\n\t\"pretty\":\"7:00
+        PM CDT on May 27, 2017\",\n\t\"day\":27,\n\t\"month\":5,\n\t\"year\":2017,\n\t\"yday\":146,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"May\",\n\t\"monthname_short\":\"May\",\n\t\"weekday_short\":\"Sat\",\n\t\"weekday\":\"Saturday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":1,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"88\",\n\t\t\"celsius\":\"31\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"63\",\n\t\t\"celsius\":\"17\"\n\t\t},\n\t\t\"conditions\":\"Thunderstorm\",\n\t\t\"icon\":\"tstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/tstorms.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":90,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.61,\n\t\t\"mm\": 15\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        null,\n\t\t\"mm\": null\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.60,\n\t\t\"mm\":
+        15\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": null,\n\t\t\"cm\": null\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 5,\n\t\t\"kph\":
+        8,\n\t\t\"dir\": \"\",\n\t\t\"degrees\": 0\n\t\t},\n\t\t\"avewind\": {\n\t\t\"mph\":
+        0,\n\t\t\"kph\": 0,\n\t\t\"dir\": \"ENE\",\n\t\t\"degrees\": 78\n\t\t},\n\t\t\"avehumidity\":
+        80,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\": 0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496016000\",\n\t\"pretty\":\"7:00
+        PM CDT on May 28, 2017\",\n\t\"day\":28,\n\t\"month\":5,\n\t\"year\":2017,\n\t\"yday\":147,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"May\",\n\t\"monthname_short\":\"May\",\n\t\"weekday_short\":\"Sun\",\n\t\"weekday\":\"Sunday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":2,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"79\",\n\t\t\"celsius\":\"26\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"58\",\n\t\t\"celsius\":\"14\"\n\t\t},\n\t\t\"conditions\":\"Chance
+        of a Thunderstorm\",\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":50,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.05,\n\t\t\"mm\": 1\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.05,\n\t\t\"mm\": 1\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 15,\n\t\t\"kph\":
+        24,\n\t\t\"dir\": \"WNW\",\n\t\t\"degrees\": 284\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 12,\n\t\t\"kph\": 19,\n\t\t\"dir\": \"WNW\",\n\t\t\"degrees\":
+        284\n\t\t},\n\t\t\"avehumidity\": 66,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496102400\",\n\t\"pretty\":\"7:00
+        PM CDT on May 29, 2017\",\n\t\"day\":29,\n\t\"month\":5,\n\t\"year\":2017,\n\t\"yday\":148,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"May\",\n\t\"monthname_short\":\"May\",\n\t\"weekday_short\":\"Mon\",\n\t\"weekday\":\"Monday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":3,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"84\",\n\t\t\"celsius\":\"29\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"57\",\n\t\t\"celsius\":\"14\"\n\t\t},\n\t\t\"conditions\":\"Partly
+        Cloudy\",\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":20,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 15,\n\t\t\"kph\":
+        24,\n\t\t\"dir\": \"W\",\n\t\t\"degrees\": 259\n\t\t},\n\t\t\"avewind\": {\n\t\t\"mph\":
+        10,\n\t\t\"kph\": 16,\n\t\t\"dir\": \"W\",\n\t\t\"degrees\": 259\n\t\t},\n\t\t\"avehumidity\":
+        44,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\": 0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496188800\",\n\t\"pretty\":\"7:00
+        PM CDT on May 30, 2017\",\n\t\"day\":30,\n\t\"month\":5,\n\t\"year\":2017,\n\t\"yday\":149,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"May\",\n\t\"monthname_short\":\"May\",\n\t\"weekday_short\":\"Tue\",\n\t\"weekday\":\"Tuesday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":4,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"79\",\n\t\t\"celsius\":\"26\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"56\",\n\t\t\"celsius\":\"13\"\n\t\t},\n\t\t\"conditions\":\"Chance
+        of a Thunderstorm\",\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":50,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.06,\n\t\t\"mm\": 2\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.06,\n\t\t\"mm\": 2\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 15,\n\t\t\"kph\":
+        24,\n\t\t\"dir\": \"W\",\n\t\t\"degrees\": 277\n\t\t},\n\t\t\"avewind\": {\n\t\t\"mph\":
+        11,\n\t\t\"kph\": 18,\n\t\t\"dir\": \"W\",\n\t\t\"degrees\": 277\n\t\t},\n\t\t\"avehumidity\":
+        43,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\": 0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496275200\",\n\t\"pretty\":\"7:00
+        PM CDT on May 31, 2017\",\n\t\"day\":31,\n\t\"month\":5,\n\t\"year\":2017,\n\t\"yday\":150,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"May\",\n\t\"monthname_short\":\"May\",\n\t\"weekday_short\":\"Wed\",\n\t\"weekday\":\"Wednesday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":5,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"80\",\n\t\t\"celsius\":\"27\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"57\",\n\t\t\"celsius\":\"14\"\n\t\t},\n\t\t\"conditions\":\"Clear\",\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":10,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"WNW\",\n\t\t\"degrees\": 300\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 7,\n\t\t\"kph\": 11,\n\t\t\"dir\": \"WNW\",\n\t\t\"degrees\":
+        300\n\t\t},\n\t\t\"avehumidity\": 51,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496361600\",\n\t\"pretty\":\"7:00
+        PM CDT on June 01, 2017\",\n\t\"day\":1,\n\t\"month\":6,\n\t\"year\":2017,\n\t\"yday\":151,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Thu\",\n\t\"weekday\":\"Thursday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":6,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"84\",\n\t\t\"celsius\":\"29\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"64\",\n\t\t\"celsius\":\"18\"\n\t\t},\n\t\t\"conditions\":\"Chance
+        of a Thunderstorm\",\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":40,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.04,\n\t\t\"mm\": 1\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.02,\n\t\t\"mm\": 1\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.01,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"S\",\n\t\t\"degrees\": 173\n\t\t},\n\t\t\"avewind\": {\n\t\t\"mph\":
+        6,\n\t\t\"kph\": 10,\n\t\t\"dir\": \"S\",\n\t\t\"degrees\": 173\n\t\t},\n\t\t\"avehumidity\":
+        55,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\": 0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496448000\",\n\t\"pretty\":\"7:00
+        PM CDT on June 02, 2017\",\n\t\"day\":2,\n\t\"month\":6,\n\t\"year\":2017,\n\t\"yday\":152,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Fri\",\n\t\"weekday\":\"Friday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":7,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"81\",\n\t\t\"celsius\":\"27\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"64\",\n\t\t\"celsius\":\"18\"\n\t\t},\n\t\t\"conditions\":\"Partly
+        Cloudy\",\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":20,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.16,\n\t\t\"mm\": 4\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.15,\n\t\t\"mm\":
+        4\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"SSE\",\n\t\t\"degrees\": 163\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 6,\n\t\t\"kph\": 10,\n\t\t\"dir\": \"SSE\",\n\t\t\"degrees\":
+        163\n\t\t},\n\t\t\"avehumidity\": 65,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496534400\",\n\t\"pretty\":\"7:00
+        PM CDT on June 03, 2017\",\n\t\"day\":3,\n\t\"month\":6,\n\t\"year\":2017,\n\t\"yday\":153,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Sat\",\n\t\"weekday\":\"Saturday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":8,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"83\",\n\t\t\"celsius\":\"28\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"66\",\n\t\t\"celsius\":\"19\"\n\t\t},\n\t\t\"conditions\":\"Chance
+        of a Thunderstorm\",\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":50,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.31,\n\t\t\"mm\": 8\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.23,\n\t\t\"mm\": 6\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.07,\n\t\t\"mm\":
+        2\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"SE\",\n\t\t\"degrees\": 146\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 8,\n\t\t\"kph\": 13,\n\t\t\"dir\": \"SE\",\n\t\t\"degrees\":
+        146\n\t\t},\n\t\t\"avehumidity\": 65,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496620800\",\n\t\"pretty\":\"7:00
+        PM CDT on June 04, 2017\",\n\t\"day\":4,\n\t\"month\":6,\n\t\"year\":2017,\n\t\"yday\":154,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Sun\",\n\t\"weekday\":\"Sunday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":9,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"82\",\n\t\t\"celsius\":\"28\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"63\",\n\t\t\"celsius\":\"17\"\n\t\t},\n\t\t\"conditions\":\"Chance
+        of Rain\",\n\t\t\"icon\":\"chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancerain.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":50,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.33,\n\t\t\"mm\": 8\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.05,\n\t\t\"mm\": 1\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.28,\n\t\t\"mm\":
+        7\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"SW\",\n\t\t\"degrees\": 226\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 9,\n\t\t\"kph\": 14,\n\t\t\"dir\": \"SW\",\n\t\t\"degrees\":
+        226\n\t\t},\n\t\t\"avehumidity\": 64,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496707200\",\n\t\"pretty\":\"7:00
+        PM CDT on June 05, 2017\",\n\t\"day\":5,\n\t\"month\":6,\n\t\"year\":2017,\n\t\"yday\":155,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Mon\",\n\t\"weekday\":\"Monday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":10,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"80\",\n\t\t\"celsius\":\"27\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"63\",\n\t\t\"celsius\":\"17\"\n\t\t},\n\t\t\"conditions\":\"Chance
+        of Rain\",\n\t\t\"icon\":\"chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancerain.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":50,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.09,\n\t\t\"mm\": 2\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.09,\n\t\t\"mm\": 2\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"SW\",\n\t\t\"degrees\": 220\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 6,\n\t\t\"kph\": 10,\n\t\t\"dir\": \"SW\",\n\t\t\"degrees\":
+        220\n\t\t},\n\t\t\"avehumidity\": 70,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t]\n\t\t}\n\t}\n}\n"
+    http_version: 
+  recorded_at: Sat, 27 May 2017 21:54:40 GMT
+- request:
+    method: get
+    uri: http://api.wunderground.com/api/<WEATHER_KEY>/forecast10day/q/63109.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.12.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      Last-Modified:
+      - Sat, 27 May 2017 21:54:40 GMT
+      Server:
+      - Apache/2.2.15 (CentOS)
+      X-Creationtime:
+      - '0.027'
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Sat, 27 May 2017 21:54:41 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Sat, 27 May 2017 21:54:41 GMT
+      Content-Length:
+      - '19081'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
+        \ \"features\": {\n  \"forecast10day\": 1\n  }\n\t}\n\t\t,\n\t\"forecast\":{\n\t\t\"txt_forecast\":
+        {\n\t\t\"date\":\"3:35 PM CDT\",\n\t\t\"forecastday\": [\n\t\t{\n\t\t\"period\":0,\n\t\t\"icon\":\"tstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/tstorms.gif\",\n\t\t\"title\":\"Saturday\",\n\t\t\"fcttext\":\"Strong
+        to severe thunderstorms likely. Lows overnight in the low 60s.\",\n\t\t\"fcttext_metric\":\"Scattered
+        strong thunderstorms. Low 17C.\",\n\t\t\"pop\":\"90\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":1,\n\t\t\"icon\":\"nt_tstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_tstorms.gif\",\n\t\t\"title\":\"Saturday
+        Night\",\n\t\t\"fcttext\":\"Thunderstorms likely, some strong, especially
+        during the evening. Damaging winds and large hail with some storms. Low 63F.
+        SE winds shifting to WNW at 10 to 15 mph. Chance of rain 90%.\",\n\t\t\"fcttext_metric\":\"Variable
+        clouds with strong thunderstorms, especially early. Damaging winds and large
+        hail with some storms. Low 17C. SE winds shifting to WNW at 15 to 25 km/h.
+        Chance of rain 60%.\",\n\t\t\"pop\":\"90\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":2,\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"title\":\"Sunday\",\n\t\t\"fcttext\":\"Mixed
+        clouds and sun with scattered thunderstorms. High 79F. Winds WNW at 10 to
+        15 mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Scattered showers
+        and thunderstorms. High 26C. Winds WNW at 15 to 25 km/h. Chance of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":3,\n\t\t\"icon\":\"nt_clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_clear.gif\",\n\t\t\"title\":\"Sunday
+        Night\",\n\t\t\"fcttext\":\"Clear skies. Low 58F. Winds WNW at 5 to 10 mph.\",\n\t\t\"fcttext_metric\":\"A
+        mostly clear sky. Low around 15C. Winds WNW at 10 to 15 km/h.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":4,\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"title\":\"Monday\",\n\t\t\"fcttext\":\"Sunshine
+        and clouds mixed. A stray shower or thunderstorm is possible. High 84F. Winds
+        W at 10 to 15 mph.\",\n\t\t\"fcttext_metric\":\"Partly cloudy skies. A stray
+        shower or thunderstorm is possible. High 29C. Winds W at 15 to 25 km/h.\",\n\t\t\"pop\":\"20\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":5,\n\t\t\"icon\":\"nt_clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_clear.gif\",\n\t\t\"title\":\"Monday
+        Night\",\n\t\t\"fcttext\":\"A mostly clear sky. Low 57F. Winds WNW at 5 to
+        10 mph.\",\n\t\t\"fcttext_metric\":\"Clear. Low 14C. Winds WNW at 10 to 15
+        km/h.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":6,\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"title\":\"Tuesday\",\n\t\t\"fcttext\":\"Partly
+        cloudy with afternoon showers or thunderstorms. High 79F. Winds W at 10 to
+        15 mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Partly cloudy with
+        afternoon showers or thunderstorms. High 26C. Winds W at 15 to 25 km/h. Chance
+        of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":7,\n\t\t\"icon\":\"nt_partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif\",\n\t\t\"title\":\"Tuesday
+        Night\",\n\t\t\"fcttext\":\"A few clouds. Low 56F. Winds light and variable.\",\n\t\t\"fcttext_metric\":\"Partly
+        cloudy. Low 14C. Winds light and variable.\",\n\t\t\"pop\":\"20\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":8,\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"title\":\"Wednesday\",\n\t\t\"fcttext\":\"Sunny
+        skies. High around 80F. Winds WNW at 5 to 10 mph.\",\n\t\t\"fcttext_metric\":\"A
+        mainly sunny sky. High 26C. Winds WNW at 10 to 15 km/h.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":9,\n\t\t\"icon\":\"nt_clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_clear.gif\",\n\t\t\"title\":\"Wednesday
+        Night\",\n\t\t\"fcttext\":\"A mostly clear sky. Low 57F. Winds light and variable.\",\n\t\t\"fcttext_metric\":\"Mostly
+        clear. Low 14C. Winds light and variable.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":10,\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"title\":\"Thursday\",\n\t\t\"fcttext\":\"Scattered
+        thunderstorms in the morning. Cloudy skies late. High 84F. Winds S at 5 to
+        10 mph. Chance of rain 40%.\",\n\t\t\"fcttext_metric\":\"Scattered thunderstorms
+        in the morning, then cloudy skies late. High 29C. Winds S at 10 to 15 km/h.
+        Chance of rain 40%.\",\n\t\t\"pop\":\"40\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":11,\n\t\t\"icon\":\"nt_chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_chancerain.gif\",\n\t\t\"title\":\"Thursday
+        Night\",\n\t\t\"fcttext\":\"Partly cloudy during the evening. A few showers
+        developing later during the night. Low 64F. Winds light and variable. Chance
+        of rain 30%.\",\n\t\t\"fcttext_metric\":\"Partly cloudy skies early followed
+        by mostly cloudy skies and a few showers later at night. Low 18C. Winds light
+        and variable. Chance of rain 30%.\",\n\t\t\"pop\":\"30\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":12,\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"title\":\"Friday\",\n\t\t\"fcttext\":\"Partly
+        cloudy skies in the morning will give way to cloudy skies during the afternoon.
+        A stray shower or thunderstorm is possible. High 81F. Winds SSE at 5 to 10
+        mph.\",\n\t\t\"fcttext_metric\":\"Intervals of clouds and sunshine in the
+        morning with more clouds for later in the day. A stray shower or thunderstorm
+        is possible. High 28C. Winds SSE at 10 to 15 km/h.\",\n\t\t\"pop\":\"20\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":13,\n\t\t\"icon\":\"nt_chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_chancetstorms.gif\",\n\t\t\"title\":\"Friday
+        Night\",\n\t\t\"fcttext\":\"Scattered thunderstorms in the evening, then variable
+        clouds overnight with more showers at times. Low 64F. Winds SSE at 5 to 10
+        mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Scattered thunderstorms
+        during the evening followed by occasional showers overnight. Low 18C. Winds
+        SSE at 10 to 15 km/h. Chance of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":14,\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"title\":\"Saturday\",\n\t\t\"fcttext\":\"Mixed
+        clouds and sun with scattered thunderstorms. High 83F. Winds SE at 5 to 10
+        mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Scattered thunderstorms.
+        High 29C. Winds SE at 10 to 15 km/h. Chance of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":15,\n\t\t\"icon\":\"nt_chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_chancerain.gif\",\n\t\t\"title\":\"Saturday
+        Night\",\n\t\t\"fcttext\":\"Variable clouds with showers at times, and perhaps
+        a rumble or two of thunder, especially early. Low 66F. Winds SE at 5 to 10
+        mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Chance of an isolated
+        thunderstorm in the evening, then variable clouds overnight with more showers
+        at times. Low 19C. Winds SE at 10 to 15 km/h. Chance of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":16,\n\t\t\"icon\":\"chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancerain.gif\",\n\t\t\"title\":\"Sunday\",\n\t\t\"fcttext\":\"Rain
+        showers early with mostly cloudy conditions later in the day. High 82F. Winds
+        SW at 5 to 10 mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Rain showers
+        early with mostly cloudy conditions later in the day. High 28C. Winds SW at
+        10 to 15 km/h. Chance of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":17,\n\t\t\"icon\":\"nt_chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_chancerain.gif\",\n\t\t\"title\":\"Sunday
+        Night\",\n\t\t\"fcttext\":\"Overcast with rain showers at times. Low 63F.
+        Winds S at 5 to 10 mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Overcast
+        with rain showers at times. Low 17C. Winds S at 10 to 15 km/h. Chance of rain
+        50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":18,\n\t\t\"icon\":\"chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancerain.gif\",\n\t\t\"title\":\"Monday\",\n\t\t\"fcttext\":\"Overcast
+        with rain showers at times. High near 80F. Winds SW at 5 to 10 mph. Chance
+        of rain 50%.\",\n\t\t\"fcttext_metric\":\"Cloudy with occasional rain showers.
+        High 27C. Winds SW at 10 to 15 km/h. Chance of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":19,\n\t\t\"icon\":\"nt_partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif\",\n\t\t\"title\":\"Monday
+        Night\",\n\t\t\"fcttext\":\"Partly cloudy skies. Low 63F. Winds light and
+        variable.\",\n\t\t\"fcttext_metric\":\"Partly cloudy skies. Low 17C. Winds
+        light and variable.\",\n\t\t\"pop\":\"20\"\n\t\t}\n\t\t]\n\t\t},\n\t\t\"simpleforecast\":
+        {\n\t\t\"forecastday\": [\n\t\t{\"date\":{\n\t\"epoch\":\"1495929600\",\n\t\"pretty\":\"7:00
+        PM CDT on May 27, 2017\",\n\t\"day\":27,\n\t\"month\":5,\n\t\"year\":2017,\n\t\"yday\":146,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"May\",\n\t\"monthname_short\":\"May\",\n\t\"weekday_short\":\"Sat\",\n\t\"weekday\":\"Saturday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":1,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"88\",\n\t\t\"celsius\":\"31\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"63\",\n\t\t\"celsius\":\"17\"\n\t\t},\n\t\t\"conditions\":\"Thunderstorm\",\n\t\t\"icon\":\"tstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/tstorms.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":90,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.61,\n\t\t\"mm\": 15\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        null,\n\t\t\"mm\": null\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.60,\n\t\t\"mm\":
+        15\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": null,\n\t\t\"cm\": null\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 5,\n\t\t\"kph\":
+        8,\n\t\t\"dir\": \"\",\n\t\t\"degrees\": 0\n\t\t},\n\t\t\"avewind\": {\n\t\t\"mph\":
+        0,\n\t\t\"kph\": 0,\n\t\t\"dir\": \"ENE\",\n\t\t\"degrees\": 78\n\t\t},\n\t\t\"avehumidity\":
+        80,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\": 0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496016000\",\n\t\"pretty\":\"7:00
+        PM CDT on May 28, 2017\",\n\t\"day\":28,\n\t\"month\":5,\n\t\"year\":2017,\n\t\"yday\":147,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"May\",\n\t\"monthname_short\":\"May\",\n\t\"weekday_short\":\"Sun\",\n\t\"weekday\":\"Sunday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":2,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"79\",\n\t\t\"celsius\":\"26\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"58\",\n\t\t\"celsius\":\"14\"\n\t\t},\n\t\t\"conditions\":\"Chance
+        of a Thunderstorm\",\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":50,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.05,\n\t\t\"mm\": 1\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.05,\n\t\t\"mm\": 1\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 15,\n\t\t\"kph\":
+        24,\n\t\t\"dir\": \"WNW\",\n\t\t\"degrees\": 284\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 12,\n\t\t\"kph\": 19,\n\t\t\"dir\": \"WNW\",\n\t\t\"degrees\":
+        284\n\t\t},\n\t\t\"avehumidity\": 66,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496102400\",\n\t\"pretty\":\"7:00
+        PM CDT on May 29, 2017\",\n\t\"day\":29,\n\t\"month\":5,\n\t\"year\":2017,\n\t\"yday\":148,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"May\",\n\t\"monthname_short\":\"May\",\n\t\"weekday_short\":\"Mon\",\n\t\"weekday\":\"Monday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":3,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"84\",\n\t\t\"celsius\":\"29\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"57\",\n\t\t\"celsius\":\"14\"\n\t\t},\n\t\t\"conditions\":\"Partly
+        Cloudy\",\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":20,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 15,\n\t\t\"kph\":
+        24,\n\t\t\"dir\": \"W\",\n\t\t\"degrees\": 259\n\t\t},\n\t\t\"avewind\": {\n\t\t\"mph\":
+        10,\n\t\t\"kph\": 16,\n\t\t\"dir\": \"W\",\n\t\t\"degrees\": 259\n\t\t},\n\t\t\"avehumidity\":
+        44,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\": 0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496188800\",\n\t\"pretty\":\"7:00
+        PM CDT on May 30, 2017\",\n\t\"day\":30,\n\t\"month\":5,\n\t\"year\":2017,\n\t\"yday\":149,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"May\",\n\t\"monthname_short\":\"May\",\n\t\"weekday_short\":\"Tue\",\n\t\"weekday\":\"Tuesday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":4,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"79\",\n\t\t\"celsius\":\"26\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"56\",\n\t\t\"celsius\":\"13\"\n\t\t},\n\t\t\"conditions\":\"Chance
+        of a Thunderstorm\",\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":50,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.06,\n\t\t\"mm\": 2\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.06,\n\t\t\"mm\": 2\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 15,\n\t\t\"kph\":
+        24,\n\t\t\"dir\": \"W\",\n\t\t\"degrees\": 277\n\t\t},\n\t\t\"avewind\": {\n\t\t\"mph\":
+        11,\n\t\t\"kph\": 18,\n\t\t\"dir\": \"W\",\n\t\t\"degrees\": 277\n\t\t},\n\t\t\"avehumidity\":
+        43,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\": 0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496275200\",\n\t\"pretty\":\"7:00
+        PM CDT on May 31, 2017\",\n\t\"day\":31,\n\t\"month\":5,\n\t\"year\":2017,\n\t\"yday\":150,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"May\",\n\t\"monthname_short\":\"May\",\n\t\"weekday_short\":\"Wed\",\n\t\"weekday\":\"Wednesday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":5,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"80\",\n\t\t\"celsius\":\"27\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"57\",\n\t\t\"celsius\":\"14\"\n\t\t},\n\t\t\"conditions\":\"Clear\",\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":10,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"WNW\",\n\t\t\"degrees\": 300\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 7,\n\t\t\"kph\": 11,\n\t\t\"dir\": \"WNW\",\n\t\t\"degrees\":
+        300\n\t\t},\n\t\t\"avehumidity\": 51,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496361600\",\n\t\"pretty\":\"7:00
+        PM CDT on June 01, 2017\",\n\t\"day\":1,\n\t\"month\":6,\n\t\"year\":2017,\n\t\"yday\":151,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Thu\",\n\t\"weekday\":\"Thursday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":6,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"84\",\n\t\t\"celsius\":\"29\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"64\",\n\t\t\"celsius\":\"18\"\n\t\t},\n\t\t\"conditions\":\"Chance
+        of a Thunderstorm\",\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":40,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.04,\n\t\t\"mm\": 1\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.02,\n\t\t\"mm\": 1\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.01,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"S\",\n\t\t\"degrees\": 173\n\t\t},\n\t\t\"avewind\": {\n\t\t\"mph\":
+        6,\n\t\t\"kph\": 10,\n\t\t\"dir\": \"S\",\n\t\t\"degrees\": 173\n\t\t},\n\t\t\"avehumidity\":
+        55,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\": 0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496448000\",\n\t\"pretty\":\"7:00
+        PM CDT on June 02, 2017\",\n\t\"day\":2,\n\t\"month\":6,\n\t\"year\":2017,\n\t\"yday\":152,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Fri\",\n\t\"weekday\":\"Friday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":7,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"81\",\n\t\t\"celsius\":\"27\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"64\",\n\t\t\"celsius\":\"18\"\n\t\t},\n\t\t\"conditions\":\"Partly
+        Cloudy\",\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":20,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.16,\n\t\t\"mm\": 4\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.15,\n\t\t\"mm\":
+        4\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"SSE\",\n\t\t\"degrees\": 163\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 6,\n\t\t\"kph\": 10,\n\t\t\"dir\": \"SSE\",\n\t\t\"degrees\":
+        163\n\t\t},\n\t\t\"avehumidity\": 65,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496534400\",\n\t\"pretty\":\"7:00
+        PM CDT on June 03, 2017\",\n\t\"day\":3,\n\t\"month\":6,\n\t\"year\":2017,\n\t\"yday\":153,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Sat\",\n\t\"weekday\":\"Saturday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":8,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"83\",\n\t\t\"celsius\":\"28\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"66\",\n\t\t\"celsius\":\"19\"\n\t\t},\n\t\t\"conditions\":\"Chance
+        of a Thunderstorm\",\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":50,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.31,\n\t\t\"mm\": 8\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.23,\n\t\t\"mm\": 6\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.07,\n\t\t\"mm\":
+        2\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"SE\",\n\t\t\"degrees\": 146\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 8,\n\t\t\"kph\": 13,\n\t\t\"dir\": \"SE\",\n\t\t\"degrees\":
+        146\n\t\t},\n\t\t\"avehumidity\": 65,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496620800\",\n\t\"pretty\":\"7:00
+        PM CDT on June 04, 2017\",\n\t\"day\":4,\n\t\"month\":6,\n\t\"year\":2017,\n\t\"yday\":154,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Sun\",\n\t\"weekday\":\"Sunday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":9,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"82\",\n\t\t\"celsius\":\"28\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"63\",\n\t\t\"celsius\":\"17\"\n\t\t},\n\t\t\"conditions\":\"Chance
+        of Rain\",\n\t\t\"icon\":\"chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancerain.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":50,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.33,\n\t\t\"mm\": 8\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.05,\n\t\t\"mm\": 1\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.28,\n\t\t\"mm\":
+        7\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"SW\",\n\t\t\"degrees\": 226\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 9,\n\t\t\"kph\": 14,\n\t\t\"dir\": \"SW\",\n\t\t\"degrees\":
+        226\n\t\t},\n\t\t\"avehumidity\": 64,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496707200\",\n\t\"pretty\":\"7:00
+        PM CDT on June 05, 2017\",\n\t\"day\":5,\n\t\"month\":6,\n\t\"year\":2017,\n\t\"yday\":155,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Mon\",\n\t\"weekday\":\"Monday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":10,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"80\",\n\t\t\"celsius\":\"27\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"63\",\n\t\t\"celsius\":\"17\"\n\t\t},\n\t\t\"conditions\":\"Chance
+        of Rain\",\n\t\t\"icon\":\"chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancerain.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":50,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.09,\n\t\t\"mm\": 2\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.09,\n\t\t\"mm\": 2\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"SW\",\n\t\t\"degrees\": 220\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 6,\n\t\t\"kph\": 10,\n\t\t\"dir\": \"SW\",\n\t\t\"degrees\":
+        220\n\t\t},\n\t\t\"avehumidity\": 70,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t]\n\t\t}\n\t}\n}\n"
+    http_version: 
+  recorded_at: Sat, 27 May 2017 21:54:41 GMT
+- request:
+    method: get
+    uri: http://api.wunderground.com/api/<WEATHER_KEY>/forecast10day/q/63109.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.12.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      Last-Modified:
+      - Sat, 27 May 2017 21:54:40 GMT
+      Server:
+      - Apache/2.2.15 (CentOS)
+      X-Creationtime:
+      - '0.027'
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Sat, 27 May 2017 21:54:41 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Sat, 27 May 2017 21:54:41 GMT
+      Content-Length:
+      - '19081'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
+        \ \"features\": {\n  \"forecast10day\": 1\n  }\n\t}\n\t\t,\n\t\"forecast\":{\n\t\t\"txt_forecast\":
+        {\n\t\t\"date\":\"3:35 PM CDT\",\n\t\t\"forecastday\": [\n\t\t{\n\t\t\"period\":0,\n\t\t\"icon\":\"tstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/tstorms.gif\",\n\t\t\"title\":\"Saturday\",\n\t\t\"fcttext\":\"Strong
+        to severe thunderstorms likely. Lows overnight in the low 60s.\",\n\t\t\"fcttext_metric\":\"Scattered
+        strong thunderstorms. Low 17C.\",\n\t\t\"pop\":\"90\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":1,\n\t\t\"icon\":\"nt_tstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_tstorms.gif\",\n\t\t\"title\":\"Saturday
+        Night\",\n\t\t\"fcttext\":\"Thunderstorms likely, some strong, especially
+        during the evening. Damaging winds and large hail with some storms. Low 63F.
+        SE winds shifting to WNW at 10 to 15 mph. Chance of rain 90%.\",\n\t\t\"fcttext_metric\":\"Variable
+        clouds with strong thunderstorms, especially early. Damaging winds and large
+        hail with some storms. Low 17C. SE winds shifting to WNW at 15 to 25 km/h.
+        Chance of rain 60%.\",\n\t\t\"pop\":\"90\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":2,\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"title\":\"Sunday\",\n\t\t\"fcttext\":\"Mixed
+        clouds and sun with scattered thunderstorms. High 79F. Winds WNW at 10 to
+        15 mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Scattered showers
+        and thunderstorms. High 26C. Winds WNW at 15 to 25 km/h. Chance of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":3,\n\t\t\"icon\":\"nt_clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_clear.gif\",\n\t\t\"title\":\"Sunday
+        Night\",\n\t\t\"fcttext\":\"Clear skies. Low 58F. Winds WNW at 5 to 10 mph.\",\n\t\t\"fcttext_metric\":\"A
+        mostly clear sky. Low around 15C. Winds WNW at 10 to 15 km/h.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":4,\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"title\":\"Monday\",\n\t\t\"fcttext\":\"Sunshine
+        and clouds mixed. A stray shower or thunderstorm is possible. High 84F. Winds
+        W at 10 to 15 mph.\",\n\t\t\"fcttext_metric\":\"Partly cloudy skies. A stray
+        shower or thunderstorm is possible. High 29C. Winds W at 15 to 25 km/h.\",\n\t\t\"pop\":\"20\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":5,\n\t\t\"icon\":\"nt_clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_clear.gif\",\n\t\t\"title\":\"Monday
+        Night\",\n\t\t\"fcttext\":\"A mostly clear sky. Low 57F. Winds WNW at 5 to
+        10 mph.\",\n\t\t\"fcttext_metric\":\"Clear. Low 14C. Winds WNW at 10 to 15
+        km/h.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":6,\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"title\":\"Tuesday\",\n\t\t\"fcttext\":\"Partly
+        cloudy with afternoon showers or thunderstorms. High 79F. Winds W at 10 to
+        15 mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Partly cloudy with
+        afternoon showers or thunderstorms. High 26C. Winds W at 15 to 25 km/h. Chance
+        of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":7,\n\t\t\"icon\":\"nt_partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif\",\n\t\t\"title\":\"Tuesday
+        Night\",\n\t\t\"fcttext\":\"A few clouds. Low 56F. Winds light and variable.\",\n\t\t\"fcttext_metric\":\"Partly
+        cloudy. Low 14C. Winds light and variable.\",\n\t\t\"pop\":\"20\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":8,\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"title\":\"Wednesday\",\n\t\t\"fcttext\":\"Sunny
+        skies. High around 80F. Winds WNW at 5 to 10 mph.\",\n\t\t\"fcttext_metric\":\"A
+        mainly sunny sky. High 26C. Winds WNW at 10 to 15 km/h.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":9,\n\t\t\"icon\":\"nt_clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_clear.gif\",\n\t\t\"title\":\"Wednesday
+        Night\",\n\t\t\"fcttext\":\"A mostly clear sky. Low 57F. Winds light and variable.\",\n\t\t\"fcttext_metric\":\"Mostly
+        clear. Low 14C. Winds light and variable.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":10,\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"title\":\"Thursday\",\n\t\t\"fcttext\":\"Scattered
+        thunderstorms in the morning. Cloudy skies late. High 84F. Winds S at 5 to
+        10 mph. Chance of rain 40%.\",\n\t\t\"fcttext_metric\":\"Scattered thunderstorms
+        in the morning, then cloudy skies late. High 29C. Winds S at 10 to 15 km/h.
+        Chance of rain 40%.\",\n\t\t\"pop\":\"40\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":11,\n\t\t\"icon\":\"nt_chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_chancerain.gif\",\n\t\t\"title\":\"Thursday
+        Night\",\n\t\t\"fcttext\":\"Partly cloudy during the evening. A few showers
+        developing later during the night. Low 64F. Winds light and variable. Chance
+        of rain 30%.\",\n\t\t\"fcttext_metric\":\"Partly cloudy skies early followed
+        by mostly cloudy skies and a few showers later at night. Low 18C. Winds light
+        and variable. Chance of rain 30%.\",\n\t\t\"pop\":\"30\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":12,\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"title\":\"Friday\",\n\t\t\"fcttext\":\"Partly
+        cloudy skies in the morning will give way to cloudy skies during the afternoon.
+        A stray shower or thunderstorm is possible. High 81F. Winds SSE at 5 to 10
+        mph.\",\n\t\t\"fcttext_metric\":\"Intervals of clouds and sunshine in the
+        morning with more clouds for later in the day. A stray shower or thunderstorm
+        is possible. High 28C. Winds SSE at 10 to 15 km/h.\",\n\t\t\"pop\":\"20\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":13,\n\t\t\"icon\":\"nt_chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_chancetstorms.gif\",\n\t\t\"title\":\"Friday
+        Night\",\n\t\t\"fcttext\":\"Scattered thunderstorms in the evening, then variable
+        clouds overnight with more showers at times. Low 64F. Winds SSE at 5 to 10
+        mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Scattered thunderstorms
+        during the evening followed by occasional showers overnight. Low 18C. Winds
+        SSE at 10 to 15 km/h. Chance of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":14,\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"title\":\"Saturday\",\n\t\t\"fcttext\":\"Mixed
+        clouds and sun with scattered thunderstorms. High 83F. Winds SE at 5 to 10
+        mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Scattered thunderstorms.
+        High 29C. Winds SE at 10 to 15 km/h. Chance of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":15,\n\t\t\"icon\":\"nt_chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_chancerain.gif\",\n\t\t\"title\":\"Saturday
+        Night\",\n\t\t\"fcttext\":\"Variable clouds with showers at times, and perhaps
+        a rumble or two of thunder, especially early. Low 66F. Winds SE at 5 to 10
+        mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Chance of an isolated
+        thunderstorm in the evening, then variable clouds overnight with more showers
+        at times. Low 19C. Winds SE at 10 to 15 km/h. Chance of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":16,\n\t\t\"icon\":\"chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancerain.gif\",\n\t\t\"title\":\"Sunday\",\n\t\t\"fcttext\":\"Rain
+        showers early with mostly cloudy conditions later in the day. High 82F. Winds
+        SW at 5 to 10 mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Rain showers
+        early with mostly cloudy conditions later in the day. High 28C. Winds SW at
+        10 to 15 km/h. Chance of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":17,\n\t\t\"icon\":\"nt_chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_chancerain.gif\",\n\t\t\"title\":\"Sunday
+        Night\",\n\t\t\"fcttext\":\"Overcast with rain showers at times. Low 63F.
+        Winds S at 5 to 10 mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Overcast
+        with rain showers at times. Low 17C. Winds S at 10 to 15 km/h. Chance of rain
+        50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":18,\n\t\t\"icon\":\"chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancerain.gif\",\n\t\t\"title\":\"Monday\",\n\t\t\"fcttext\":\"Overcast
+        with rain showers at times. High near 80F. Winds SW at 5 to 10 mph. Chance
+        of rain 50%.\",\n\t\t\"fcttext_metric\":\"Cloudy with occasional rain showers.
+        High 27C. Winds SW at 10 to 15 km/h. Chance of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":19,\n\t\t\"icon\":\"nt_partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif\",\n\t\t\"title\":\"Monday
+        Night\",\n\t\t\"fcttext\":\"Partly cloudy skies. Low 63F. Winds light and
+        variable.\",\n\t\t\"fcttext_metric\":\"Partly cloudy skies. Low 17C. Winds
+        light and variable.\",\n\t\t\"pop\":\"20\"\n\t\t}\n\t\t]\n\t\t},\n\t\t\"simpleforecast\":
+        {\n\t\t\"forecastday\": [\n\t\t{\"date\":{\n\t\"epoch\":\"1495929600\",\n\t\"pretty\":\"7:00
+        PM CDT on May 27, 2017\",\n\t\"day\":27,\n\t\"month\":5,\n\t\"year\":2017,\n\t\"yday\":146,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"May\",\n\t\"monthname_short\":\"May\",\n\t\"weekday_short\":\"Sat\",\n\t\"weekday\":\"Saturday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":1,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"88\",\n\t\t\"celsius\":\"31\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"63\",\n\t\t\"celsius\":\"17\"\n\t\t},\n\t\t\"conditions\":\"Thunderstorm\",\n\t\t\"icon\":\"tstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/tstorms.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":90,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.61,\n\t\t\"mm\": 15\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        null,\n\t\t\"mm\": null\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.60,\n\t\t\"mm\":
+        15\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": null,\n\t\t\"cm\": null\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 5,\n\t\t\"kph\":
+        8,\n\t\t\"dir\": \"\",\n\t\t\"degrees\": 0\n\t\t},\n\t\t\"avewind\": {\n\t\t\"mph\":
+        0,\n\t\t\"kph\": 0,\n\t\t\"dir\": \"ENE\",\n\t\t\"degrees\": 78\n\t\t},\n\t\t\"avehumidity\":
+        80,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\": 0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496016000\",\n\t\"pretty\":\"7:00
+        PM CDT on May 28, 2017\",\n\t\"day\":28,\n\t\"month\":5,\n\t\"year\":2017,\n\t\"yday\":147,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"May\",\n\t\"monthname_short\":\"May\",\n\t\"weekday_short\":\"Sun\",\n\t\"weekday\":\"Sunday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":2,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"79\",\n\t\t\"celsius\":\"26\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"58\",\n\t\t\"celsius\":\"14\"\n\t\t},\n\t\t\"conditions\":\"Chance
+        of a Thunderstorm\",\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":50,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.05,\n\t\t\"mm\": 1\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.05,\n\t\t\"mm\": 1\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 15,\n\t\t\"kph\":
+        24,\n\t\t\"dir\": \"WNW\",\n\t\t\"degrees\": 284\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 12,\n\t\t\"kph\": 19,\n\t\t\"dir\": \"WNW\",\n\t\t\"degrees\":
+        284\n\t\t},\n\t\t\"avehumidity\": 66,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496102400\",\n\t\"pretty\":\"7:00
+        PM CDT on May 29, 2017\",\n\t\"day\":29,\n\t\"month\":5,\n\t\"year\":2017,\n\t\"yday\":148,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"May\",\n\t\"monthname_short\":\"May\",\n\t\"weekday_short\":\"Mon\",\n\t\"weekday\":\"Monday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":3,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"84\",\n\t\t\"celsius\":\"29\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"57\",\n\t\t\"celsius\":\"14\"\n\t\t},\n\t\t\"conditions\":\"Partly
+        Cloudy\",\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":20,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 15,\n\t\t\"kph\":
+        24,\n\t\t\"dir\": \"W\",\n\t\t\"degrees\": 259\n\t\t},\n\t\t\"avewind\": {\n\t\t\"mph\":
+        10,\n\t\t\"kph\": 16,\n\t\t\"dir\": \"W\",\n\t\t\"degrees\": 259\n\t\t},\n\t\t\"avehumidity\":
+        44,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\": 0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496188800\",\n\t\"pretty\":\"7:00
+        PM CDT on May 30, 2017\",\n\t\"day\":30,\n\t\"month\":5,\n\t\"year\":2017,\n\t\"yday\":149,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"May\",\n\t\"monthname_short\":\"May\",\n\t\"weekday_short\":\"Tue\",\n\t\"weekday\":\"Tuesday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":4,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"79\",\n\t\t\"celsius\":\"26\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"56\",\n\t\t\"celsius\":\"13\"\n\t\t},\n\t\t\"conditions\":\"Chance
+        of a Thunderstorm\",\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":50,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.06,\n\t\t\"mm\": 2\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.06,\n\t\t\"mm\": 2\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 15,\n\t\t\"kph\":
+        24,\n\t\t\"dir\": \"W\",\n\t\t\"degrees\": 277\n\t\t},\n\t\t\"avewind\": {\n\t\t\"mph\":
+        11,\n\t\t\"kph\": 18,\n\t\t\"dir\": \"W\",\n\t\t\"degrees\": 277\n\t\t},\n\t\t\"avehumidity\":
+        43,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\": 0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496275200\",\n\t\"pretty\":\"7:00
+        PM CDT on May 31, 2017\",\n\t\"day\":31,\n\t\"month\":5,\n\t\"year\":2017,\n\t\"yday\":150,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"May\",\n\t\"monthname_short\":\"May\",\n\t\"weekday_short\":\"Wed\",\n\t\"weekday\":\"Wednesday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":5,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"80\",\n\t\t\"celsius\":\"27\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"57\",\n\t\t\"celsius\":\"14\"\n\t\t},\n\t\t\"conditions\":\"Clear\",\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":10,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"WNW\",\n\t\t\"degrees\": 300\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 7,\n\t\t\"kph\": 11,\n\t\t\"dir\": \"WNW\",\n\t\t\"degrees\":
+        300\n\t\t},\n\t\t\"avehumidity\": 51,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496361600\",\n\t\"pretty\":\"7:00
+        PM CDT on June 01, 2017\",\n\t\"day\":1,\n\t\"month\":6,\n\t\"year\":2017,\n\t\"yday\":151,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Thu\",\n\t\"weekday\":\"Thursday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":6,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"84\",\n\t\t\"celsius\":\"29\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"64\",\n\t\t\"celsius\":\"18\"\n\t\t},\n\t\t\"conditions\":\"Chance
+        of a Thunderstorm\",\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":40,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.04,\n\t\t\"mm\": 1\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.02,\n\t\t\"mm\": 1\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.01,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"S\",\n\t\t\"degrees\": 173\n\t\t},\n\t\t\"avewind\": {\n\t\t\"mph\":
+        6,\n\t\t\"kph\": 10,\n\t\t\"dir\": \"S\",\n\t\t\"degrees\": 173\n\t\t},\n\t\t\"avehumidity\":
+        55,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\": 0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496448000\",\n\t\"pretty\":\"7:00
+        PM CDT on June 02, 2017\",\n\t\"day\":2,\n\t\"month\":6,\n\t\"year\":2017,\n\t\"yday\":152,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Fri\",\n\t\"weekday\":\"Friday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":7,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"81\",\n\t\t\"celsius\":\"27\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"64\",\n\t\t\"celsius\":\"18\"\n\t\t},\n\t\t\"conditions\":\"Partly
+        Cloudy\",\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":20,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.16,\n\t\t\"mm\": 4\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.15,\n\t\t\"mm\":
+        4\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"SSE\",\n\t\t\"degrees\": 163\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 6,\n\t\t\"kph\": 10,\n\t\t\"dir\": \"SSE\",\n\t\t\"degrees\":
+        163\n\t\t},\n\t\t\"avehumidity\": 65,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496534400\",\n\t\"pretty\":\"7:00
+        PM CDT on June 03, 2017\",\n\t\"day\":3,\n\t\"month\":6,\n\t\"year\":2017,\n\t\"yday\":153,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Sat\",\n\t\"weekday\":\"Saturday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":8,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"83\",\n\t\t\"celsius\":\"28\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"66\",\n\t\t\"celsius\":\"19\"\n\t\t},\n\t\t\"conditions\":\"Chance
+        of a Thunderstorm\",\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":50,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.31,\n\t\t\"mm\": 8\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.23,\n\t\t\"mm\": 6\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.07,\n\t\t\"mm\":
+        2\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"SE\",\n\t\t\"degrees\": 146\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 8,\n\t\t\"kph\": 13,\n\t\t\"dir\": \"SE\",\n\t\t\"degrees\":
+        146\n\t\t},\n\t\t\"avehumidity\": 65,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496620800\",\n\t\"pretty\":\"7:00
+        PM CDT on June 04, 2017\",\n\t\"day\":4,\n\t\"month\":6,\n\t\"year\":2017,\n\t\"yday\":154,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Sun\",\n\t\"weekday\":\"Sunday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":9,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"82\",\n\t\t\"celsius\":\"28\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"63\",\n\t\t\"celsius\":\"17\"\n\t\t},\n\t\t\"conditions\":\"Chance
+        of Rain\",\n\t\t\"icon\":\"chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancerain.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":50,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.33,\n\t\t\"mm\": 8\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.05,\n\t\t\"mm\": 1\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.28,\n\t\t\"mm\":
+        7\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"SW\",\n\t\t\"degrees\": 226\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 9,\n\t\t\"kph\": 14,\n\t\t\"dir\": \"SW\",\n\t\t\"degrees\":
+        226\n\t\t},\n\t\t\"avehumidity\": 64,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1496707200\",\n\t\"pretty\":\"7:00
+        PM CDT on June 05, 2017\",\n\t\"day\":5,\n\t\"month\":6,\n\t\"year\":2017,\n\t\"yday\":155,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Mon\",\n\t\"weekday\":\"Monday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"CDT\",\n\t\"tz_long\":\"America/Chicago\"\n},\n\t\t\"period\":10,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"80\",\n\t\t\"celsius\":\"27\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"63\",\n\t\t\"celsius\":\"17\"\n\t\t},\n\t\t\"conditions\":\"Chance
+        of Rain\",\n\t\t\"icon\":\"chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancerain.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":50,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.09,\n\t\t\"mm\": 2\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.09,\n\t\t\"mm\": 2\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"SW\",\n\t\t\"degrees\": 220\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 6,\n\t\t\"kph\": 10,\n\t\t\"dir\": \"SW\",\n\t\t\"degrees\":
+        220\n\t\t},\n\t\t\"avehumidity\": 70,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t]\n\t\t}\n\t}\n}\n"
+    http_version: 
+  recorded_at: Sat, 27 May 2017 21:54:41 GMT
+recorded_with: VCR 3.0.3
